@@ -1,0 +1,1 @@
+//https://github.com/jonataslaw/getx/blob/master/lib/get_utils/src/extensions/string_extensions.dart
