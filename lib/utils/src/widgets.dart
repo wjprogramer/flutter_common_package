@@ -30,20 +30,20 @@ Widget h1(String text) {
   );
 }
 
-Widget h2(String text) {
+Widget h2(String text, { Color? color }) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     child: Text(text,
-      style: TextStyle(fontSize: 20, color: MyConfig.primaryColor.shade600),
+      style: TextStyle(fontSize: 20, color: color ?? MyConfig.primaryColor.shade600),
     ),
   );
 }
 
-Widget p(String text) {
+Widget p(String text, { Color? backgroundColor }) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     margin: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
-    color: MyConfig.accentColor.shade50,
+    color: backgroundColor ?? MyConfig.accentColor.shade50,
     child: Text(text,
       style: const TextStyle(),
     ),
