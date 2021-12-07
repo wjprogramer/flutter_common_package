@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 
+import 'package:flutter/material.dart';
+
 // ref: https://github.com/jonataslaw/getx/blob/master/lib/get_utils/src/extensions/double_extensions.dart
 // ref: https://github.com/jonataslaw/getx/blob/master/lib/get_utils/src/extensions/num_extensions.dart
 
@@ -33,4 +35,22 @@ extension Precision on num {
   Duration get minutes => Duration(seconds: (this * Duration.secondsPerMinute).round());
   Duration get seconds => Duration(milliseconds: (this * 1000).round());
   Duration get milliseconds => Duration(microseconds: (this * 1000).round());
+}
+
+extension IntX on int {
+  Widget get height => SizedBox(
+    height: this.toDouble(),
+  );
+  Widget get width => SizedBox(
+    width: this.toDouble(),
+  );
+}
+
+extension DoubleX on double {
+  Widget get height => SizedBox(
+    height: this,
+  );
+  Widget get width => SizedBox(
+    width: this,
+  );
 }
