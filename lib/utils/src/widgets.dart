@@ -23,9 +23,8 @@ Widget title2(String text) {
 Widget h1(String text) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
-    color: myConfig.primaryColor.shade200,
     child: Text(text,
-      style: const TextStyle(fontSize: 23, color: Colors.white),
+      style: const TextStyle(fontSize: 23),
     ),
   );
 }
@@ -43,7 +42,7 @@ Widget p(String text, { Color? backgroundColor }) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     margin: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
-    color: backgroundColor ?? myConfig.accentColor.shade50,
+    color: backgroundColor,
     child: Text(text,
       style: const TextStyle(),
     ),
