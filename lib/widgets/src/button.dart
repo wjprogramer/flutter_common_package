@@ -45,6 +45,7 @@ class MyButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: InkWell(
+        borderRadius: BorderRadius.circular(8.0),
         onTap: () {
           if (onPressed != null) {
             onPressed!();
