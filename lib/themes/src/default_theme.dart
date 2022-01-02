@@ -5,5 +5,6 @@ ThemeData getMyDefaultTheme() => ThemeData.light().copyWith(
   primaryColor: myConfig.primaryColor,
   appBarTheme: AppBarTheme(
     elevation: 0,
+    color: myConfig.primaryColor,
   ),
 );
