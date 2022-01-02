@@ -8,7 +8,7 @@ Widget title(String text) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     child: Text(text,
-      style: TextStyle(fontSize: 23, color: MyConfig.primaryColor),
+      style: TextStyle(fontSize: 23, color: myConfig.primaryColor),
     ),
   );
 }
@@ -23,7 +23,7 @@ Widget title2(String text) {
 Widget h1(String text) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
-    color: MyConfig.primaryColor.shade200,
+    color: myConfig.primaryColor.shade200,
     child: Text(text,
       style: const TextStyle(fontSize: 23, color: Colors.white),
     ),
@@ -34,7 +34,7 @@ Widget h2(String text, { Color? color }) {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     child: Text(text,
-      style: TextStyle(fontSize: 20, color: color ?? MyConfig.primaryColor.shade600),
+      style: TextStyle(fontSize: 20, color: color ?? myConfig.primaryColor.shade600),
     ),
   );
 }
@@ -43,7 +43,7 @@ Widget p(String text, { Color? backgroundColor }) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
     margin: const EdgeInsets.symmetric(horizontal: _hp, vertical: _vp),
-    color: backgroundColor ?? MyConfig.accentColor.shade50,
+    color: backgroundColor ?? myConfig.accentColor.shade50,
     child: Text(text,
       style: const TextStyle(),
     ),

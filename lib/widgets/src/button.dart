@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_common_package/utils/src/navigator.dart';
 
 enum MyButtonType { none, runApp, collection, todo, empty, hard }
 
@@ -50,7 +51,8 @@ class MyButton extends StatelessWidget {
             return;
           }
           if (page != null) {
-            Navigator.of(context).push<dynamic>(MaterialPageRoute<dynamic>(builder: (_) => page!));
+            // Navigator.of(context).push<dynamic>(MaterialPageRoute<dynamic>(builder: (_) => page!));
+            push(context, page!);
             return;
           }
         },

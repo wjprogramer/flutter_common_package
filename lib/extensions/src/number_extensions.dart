@@ -54,3 +54,11 @@ extension DoubleX on double {
     width: this,
   );
 }
+
+extension NumX on num {
+  /// 將 [start1] 之間 [end1] 的數字，轉換成 [start2] ~ [end2]
+  num convertRanges(start1, end1, start2, end2) {
+    var ratio = (this - start1) / (end1 - start1);
+    return (end2 - start2) * ratio + start2;
+  }
+}

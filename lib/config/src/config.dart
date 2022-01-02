@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 /// You can change properties you want
 class MyConfig {
-  static MaterialColor primaryColor = Colors.blue;
-  static MaterialColor accentColor = Colors.orange;
+  MaterialColor primaryColor = Colors.blue;
+  MaterialColor accentColor = Colors.orange;
 }
+
+MyConfig myConfig = MyConfig();
