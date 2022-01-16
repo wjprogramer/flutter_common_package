@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_common_package/utils/src/navigator.dart';
 
@@ -66,6 +67,7 @@ class MyButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(8.0)
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Row(
                 children: <Widget>[
