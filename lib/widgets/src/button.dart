@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_common_package/utils/src/navigator.dart';
 
@@ -33,6 +32,8 @@ class MyButton extends StatelessWidget {
   }) : super(key: key);
 
   final String text;
+
+  /// 要跳轉的頁面
   final Widget? page;
   final Function? onPressed;
   final List<MyButtonType> myButtonTypes;

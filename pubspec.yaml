@@ -1,11 +1,11 @@
 name: flutter_common_package
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: flhttps://github.com/wjprogramer/flutter_common_package
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.17.0 <3.0.0"
+#  flutter: ">=1.17.0"
 
 dependencies:
   flutter:
