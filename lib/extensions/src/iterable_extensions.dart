@@ -20,4 +20,11 @@ extension IterableX<T> on Iterable<T> {
     var i = 0;
     return map((e) => f(e, i++));
   }
+
+  T? firstWhereOrNull(bool Function(T) test) {
+    for (T element in this) {
+      if (test(element)) return element;
+    }
+    return null;
+  }
 }
